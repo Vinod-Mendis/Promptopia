@@ -32,7 +32,7 @@ const handler = NextAuth( {
 
     async signIn ({profile}) {
       try {
-        // serveless -> lambda
+        // serveless -> lambda(it dies when it does it`s job)
         await connectToDB();
 
         // check if a user already exists

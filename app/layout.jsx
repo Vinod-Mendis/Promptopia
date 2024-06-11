@@ -4,7 +4,10 @@ import Provider from '@components/Provider';
 
 export const metadata = {
   title : "Promptopia",
-  description : "Discover & Share AI Prompts" 
+  description : "Discover & Share AI Prompts",
+  icons: {
+    icon: '/assets/icons/favicon.ico',
+  },
 }
 
 const RootLayout = ({children}) => {

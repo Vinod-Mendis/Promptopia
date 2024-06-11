@@ -11,6 +11,7 @@ export const GET = async (request,{params}) => {
     
     return new Response(JSON.stringify(prompts),{status:200})
   } catch (error) {
+    console.log('\x1b[31m Failed to Fetch all Prompts in users \x1b[0m',error);
     return new Response("Failed to Fetch all Prompts",{status:500})
     
   }
